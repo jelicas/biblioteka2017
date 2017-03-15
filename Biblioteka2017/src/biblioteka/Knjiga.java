@@ -41,5 +41,9 @@ public class Knjiga {
 		return autori;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Knjiga [naslov=" + naslov + ", isbn=" + isbn + ", izdavac=" + izdavac + ", izdanje=" + izdanje
+				+ ", autori=" + autori + "]";
+	}
 }
