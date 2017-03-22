@@ -33,6 +33,7 @@ public class Biblioteka implements BibliotekaInterfejs {
 	public LinkedList<Knjiga> pronadjiKnjigu(String naslov, Autor autor, long isbn, String izdavac) {
 		if(autor == null || isbn == 0 || naslov == null || izdavac == null)
 			throw new RuntimeException("Morate uneti neki kriterijum");
+		
 		LinkedList<Knjiga> rezultati = new LinkedList<Knjiga>();
 		
 		for (int i = 0; i < knjige.size(); i++) {
