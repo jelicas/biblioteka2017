@@ -25,6 +25,8 @@ public class Biblioteka implements BibliotekaInterfejs {
 
 	@Override
 	public LinkedList<Knjiga> pronadjiKnjigu(String naslov, Autor autor, long isbn, String izdavac) {
+		if(autor == null || isbn == 0 ||naslov == null || izdavac ==null)
+			return null;
 		LinkedList<Knjiga> rezultati = new LinkedList<Knjiga>();
 		
 		for (int i = 0; i < knjige.size(); i++) {
